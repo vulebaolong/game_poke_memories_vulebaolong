@@ -48,8 +48,10 @@ export default {
                 (_, i) => i + 1
             );
 
+            // tạo secondCards từ firstCards
             const secondCards = [...firstCards];
 
+            // nối 2 mảng firstCards và secondCards
             const cards = [...firstCards, ...secondCards];
 
             this.setting.cardsContext = shuffled(
